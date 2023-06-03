@@ -6,7 +6,7 @@ import (
 	"go-rest-api/model"
 )
 
-func main () {
+func main() {
 	dbConn := db.NewDB()
 	defer fmt.Println("Successfully Migrated")
 	defer db.CloseDB(dbConn)
